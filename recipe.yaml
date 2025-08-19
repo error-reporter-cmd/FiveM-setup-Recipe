@@ -33,19 +33,9 @@ tasks:
     src: ./resources/vMenu/config/permissions.cfg
     dest: ./permissions.cfg
 
-  - action: download_github
-    src: https://github.com/TayMcKenzieNZ/rpemotes
-    ref: master
-    dest: ./resources/[scripts]rpemotes
-  
-  - action: replace_string
-    file: ./resources/[scripts]/rpemotes/config.lua
-    search: 'AdultEmotesDisabled = false,'
-    replace: 'AdultEmotesDisabled = true,'
-  
     # Download lvc
   - action: download_file
-    url: https://github.com/TrevorBarns/luxart-vehicle-control/releases/download/3.2.9/Luxart.Vehicle.Control.v3.2.9-Rev1.zip
+    url: https://github.com/TrevorBarns/luxart-vehicle-control/releases/download/3.2.9/Luxart.Vehicle.Control.v3.2.9-Rev2.zip
     path: ./tmp/lvc.zip
       
      # Unzips and places vMenu on resources folder 
